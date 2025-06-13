@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: gate
+
+api:
+  base-url: "http://localhost:8080"
+  parking-management:
+    entrance: "/api/admin/management/entrance"
+    departure: "/api/admin/management/{plate}/departure"
+
+# WebClient ??
+webclient:
+  timeout:
+    connection: 5000
+    read: 10000
+    write: 10000
